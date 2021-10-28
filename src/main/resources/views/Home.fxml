@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="980.0" styleClass="bg-gradient" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Home">
+   <children>
+      <VBox fx:id="userv" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="980.0">
+         <children>
+            <ImageView fx:id="pictureHome" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/chat.png" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="147.0" text="Hos Geldiniz, " textFill="#e8e3e3">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name" layoutX="443.0" layoutY="16.0" prefHeight="36.0" prefWidth="233.0" textFill="#e8e3e3e0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Email" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="email" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="16.0" prefHeight="36.0" prefWidth="200.0" textFill="#e8e3e3e0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Fakulte" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="faculty" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="16.0" prefHeight="36.0" prefWidth="200.0" textFill="#e8e3e3e0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Bolum" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="department" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="16.0" prefHeight="37.0" prefWidth="200.0" textFill="#e8e3e3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="optional1" alignment="CENTER" layoutX="10.0" layoutY="301.0" prefHeight="48.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Sinif" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="grade" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="16.0" prefHeight="37.0" prefWidth="200.0" textFill="#e8e3e3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="optional2" alignment="CENTER" layoutX="10.0" layoutY="349.0" prefHeight="48.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Kayit Tarihi" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="regDate" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="16.0" prefHeight="37.0" prefWidth="200.0" textFill="#e8e3e3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="optional3" alignment="CENTER" layoutX="10.0" layoutY="397.0" prefHeight="48.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Danisman" textFill="WHITE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="danisman" alignment="CENTER_RIGHT" layoutX="443.0" layoutY="16.0" prefHeight="37.0" prefWidth="200.0" textFill="#e8e3e3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

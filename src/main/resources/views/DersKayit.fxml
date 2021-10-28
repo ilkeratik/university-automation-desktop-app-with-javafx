@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<TabPane fx:id="dersTab" prefHeight="667.0" prefWidth="980.0" styleClass="bg-gradient" stylesheets="@application.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.DersKayit">
+  <tabs>
+    <Tab text="Not Goruntule">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView layoutX="189.0" layoutY="119.0" prefHeight="383.0" prefWidth="604.0" />
+                  <Label alignment="CENTER" layoutX="189.0" layoutY="55.0" prefHeight="35.0" prefWidth="100.0" text="Donem -&gt;" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox layoutX="289.0" layoutY="59.0" prefHeight="27.0" prefWidth="501.0" />
+               </children>
+            </AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Ders Kayit">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="980.0" stylesheets="@application.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="47.0" prefWidth="147.0" text="Ders Kayit" textFill="#e8e3e3">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tableView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="562.0" />
+                        <JFXButton onAction="#addLesson" prefHeight="39.0" prefWidth="177.0" style="-fx-background-color: red;" text="Dersi Ekle" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <TableView fx:id="tableSelected" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="562.0" />
+                        <JFXButton onAction="#approve" prefHeight="58.0" prefWidth="369.0" style="-fx-background-color: green;" text="Ders Kaydini Onayla" textFill="WHITE">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

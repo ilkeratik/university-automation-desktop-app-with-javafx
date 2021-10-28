@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginWrap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LoginController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="500.0">
+         <left>
+            <Rectangle height="500.0" stroke="BLACK" strokeWidth="0.0" width="150.0" BorderPane.alignment="CENTER">
+               <fill>
+                  <LinearGradient endX="0.8857142857142857" endY="0.7952380952380951" startY="0.8333333333333334">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.0767543837428093" green="0.12002924084663391" blue="0.15789473056793213" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.24313725531101227" green="0.501960813999176" blue="0.7254902124404907" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+         </left>
+         <center>
+            <VBox fx:id="signUpBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #3e80b9;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="326.0" text="Kayit Ekrani" textFill="#e8e3e3">
+                     <font>
+                        <Font name="Century" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="47.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Kulanici tipi:" textFill="#e8e3e3e0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXRadioButton prefHeight="36.0" prefWidth="91.0" text="Ogrenci" textFill="WHITE">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="userType" />
+                           </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="134.0" layoutY="10.0" prefHeight="36.0" prefWidth="113.0" text="Akademik" textFill="WHITE" toggleGroup="$userType" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Ad:" textFill="#e8e3e3e0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="signName" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Email:" textFill="#e8e3e3e0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="signEmail" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="No:" textFill="#e8e3e3e0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="signNo" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="48.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Sifre:" textFill="#e8e3e3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="signPassword" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#signUp" prefHeight="48.0" prefWidth="111.0" ripplerFill="#ae1f1f" style="-fx-background-color: white;" stylesheets="@application.css" text="Kaydi Tamamla" textAlignment="CENTER" />
+                  <Label fx:id="signUpState" prefHeight="37.0" prefWidth="252.0" textFill="#e8e3e3">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#goSignIn" prefHeight="40.0" prefWidth="108.0" ripplerFill="#b22828" style="-fx-background-color: white;" stylesheets="@application.css" text="Geri Don" textAlignment="CENTER" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Text fill="WHITE" layoutX="10.0" layoutY="380.0" opacity="0.89" strokeType="OUTSIDE" strokeWidth="0.0" text="IlkerSoft" wrappingWidth="166.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="10.0" layoutY="397.0" opacity="0.89" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Solutions" wrappingWidth="166.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

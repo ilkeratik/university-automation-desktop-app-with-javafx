@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="515.0" prefWidth="915.0" styleClass="bg-gradient" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Student.OgrenciNotGoruntuleme">
+   <children>
+      <Label alignment="CENTER" layoutX="112.0" layoutY="67.0" prefHeight="33.0" prefWidth="160.0" style="-fx-background-color: white;" text="Donem  Seciniz-&gt;">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="termLessonsTable" layoutX="112.0" layoutY="111.0" prefHeight="362.0" prefWidth="756.0" />
+      <ComboBox fx:id="termBox" layoutX="287.0" layoutY="67.0" onAction="#getTermLessons" prefHeight="33.0" prefWidth="324.0" />
+      <Label alignment="CENTER" layoutX="344.0" prefHeight="52.0" prefWidth="324.0" style="-fx-background-color: white;" text="Not Goruntuleme Ekrani">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

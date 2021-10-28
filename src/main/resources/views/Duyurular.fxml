@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="980.0" styleClass="bg-gradient" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Duyurular">
+   <children>
+      <Label alignment="CENTER" layoutX="321.0" layoutY="14.0" prefHeight="43.0" prefWidth="254.0" style="-fx-background-color: white;" text="Duyurular">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <WebView fx:id="webDuyuru" layoutX="5.0" layoutY="96.0" prefHeight="567.0" prefWidth="970.0" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#goBack" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: yellow;" text="Geri" />
+      <Button fx:id="forwardBtn" layoutX="71.0" layoutY="58.0" mnemonicParsing="false" onAction="#goForward" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: yellow;" text="Ileri" />
+   </children>
+</AnchorPane>

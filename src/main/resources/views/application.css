@@ -1,0 +1,21 @@
+.root{
+    -fx-background-color: #e8e3e3;
+}
+#loginState {
+    -fx-label: #4b0e16;
+}
+.treeView{
+    -fx-font-size: 15;
+}
+.v-box{
+    -fx-background-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #d2691e, #ffa500 100%);
+}
+.bg-gradient{
+    -fx-background-color: linear-gradient(#821717, #87a7ba 100%);
+}
+.buttonMang{
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-background-color: rgba(255, 255, 255, 0.25);
+    -fx-font-weight: bold;
+}

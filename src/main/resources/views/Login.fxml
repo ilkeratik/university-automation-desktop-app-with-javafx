@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.LoginController">
+   <children>
+      <BorderPane fx:id="loginWrapper" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0">
+         <right>
+            <VBox fx:id="signInBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="350.0" style="-fx-background-color: #3e80b9;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="335.0" text="Firat Universitesi OBS" textFill="WHITE">
+                     <font>
+                        <Font name="Century" size="20.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="47.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Kulanici tipi:" textFill="#e8e3e3e0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <JFXRadioButton prefHeight="36.0" prefWidth="89.0" text="Ogrenci" textFill="WHITE">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="userType" />
+                           </toggleGroup>
+                           <selectedColor>
+                              <Color red="0.6100000143051147" green="0.061000000685453415" blue="0.061000000685453415" />
+                           </selectedColor>
+                        </JFXRadioButton>
+                        <JFXRadioButton layoutX="134.0" layoutY="10.0" prefHeight="36.0" prefWidth="113.0" text="Akademik" textFill="WHITE" toggleGroup="$userType" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="47.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Email:" textFill="#e8e3e3e0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="loginEmail" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="48.0" prefWidth="339.0">
+                     <children>
+                        <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Sifre:" textFill="#e8e3e3">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                           <padding>
+                              <Insets right="5.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="loginPassword" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="loginState" prefHeight="27.0" prefWidth="186.0" textFill="#e8e3e3">
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin></Label>
+                  <JFXToggleButton alignment="BOTTOM_RIGHT" prefHeight="50.0" prefWidth="169.0" text="Oturum acik kalsin" textFill="#e8e3e3">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="keepLoggedIn" />
+                     </toggleGroup>
+                  </JFXToggleButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#login" prefHeight="37.0" prefWidth="142.0" ripplerFill="#eb1111" style="-fx-background-color: #257953;" text="Giris Yap" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Arial" size="15.0" />
+                     </font></JFXButton>
+                  <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#goSignUp" prefHeight="32.0" prefWidth="142.0" ripplerFill="#b22828" style="-fx-background-color: #ffd257;" text="Kayit Ol" textAlignment="CENTER" textFill="#464040">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </right>
+      </BorderPane>
+      <Rectangle height="500.0" stroke="BLACK" strokeWidth="0.0" width="150.0">
+         <fill>
+            <LinearGradient endX="0.8857142857142857" endY="0.7952380952380951" startY="0.8333333333333334">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.0767543837428093" green="0.12002924084663391" blue="0.15789473056793213" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.24313725531101227" green="0.501960813999176" blue="0.7254902124404907" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Text fill="WHITE" layoutX="10.0" layoutY="380.0" opacity="0.89" strokeType="OUTSIDE" strokeWidth="0.0" text="IlkerSoft" wrappingWidth="166.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="397.0" opacity="0.89" strokeType="OUTSIDE" strokeWidth="0.0" text="Software Solutions" wrappingWidth="166.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="693.0" prefWidth="1175.0" styleClass="bg-gradient" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Teacher.TeacherDersYonetimi">
+   <children>
+      <TableView fx:id="lessonsTable" layoutX="24.0" layoutY="79.0" prefHeight="280.0" prefWidth="510.0" />
+      <Label alignment="CENTER" layoutX="456.0" layoutY="14.0" prefHeight="30.0" prefWidth="225.0" style="-fx-background-color: white;" text="Verilen Dersler Yonetimi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="32.0" layoutY="373.0" onAction="#showStudents" prefHeight="40.0" prefWidth="147.0" style="-fx-background-color: yellow;" text="Ogrencileri Goster">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="201.0" layoutY="373.0" onAction="#vizeGiris" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: yellow;" text="Vize Notu Gir">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="348.0" layoutY="373.0" onAction="#finalGiris" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: yellow;" text="Final Notu Gir">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="32.0" layoutY="435.0" onAction="#harfNotuHesapla" prefHeight="40.0" prefWidth="148.0" style="-fx-background-color: yellow;" text="Harf Notu Hesapla">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="chosenDetailsTable" editable="true" layoutX="568.0" layoutY="75.0" prefHeight="503.0" prefWidth="393.0" visible="false" />
+      <JFXButton fx:id="approveBtn" layoutX="568.0" layoutY="584.0" onAction="#approveNotGirisi" prefHeight="40.0" prefWidth="121.0" style="-fx-background-color: green;" text="Onayla" textFill="WHITE" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="studentListTable" editable="true" layoutX="578.0" layoutY="85.0" prefHeight="503.0" prefWidth="393.0" visible="false" />
+   </children>
+</AnchorPane>

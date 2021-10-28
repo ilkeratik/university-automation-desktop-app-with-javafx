@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="1200.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Student.StudentMangWindow">
+    <children>
+      <BorderPane fx:id="borderPane" prefHeight="717.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox fillHeight="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="-Infinity" prefHeight="50.0" style="-fx-background-color: #821717; -fx-border-insets: 0;" BorderPane.alignment="TOP_LEFT">
+               <children>
+                  <JFXHamburger fx:id="menuHam" alignment="CENTER" fillWidth="false" prefHeight="43.0" prefWidth="50.0" snapToPixel="false" style="-fx-background-color: white; -fx-spacing: 8px;">
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor></JFXHamburger>
+                  <Label prefHeight="43.0" prefWidth="322.0" text="Firat Universitesi Ogrenci Bilgi Sistemi" textFill="#fffffff5">
+                     <font>
+                        <Font name="Ebrima" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </HBox>
+         </top>
+         <center>
+            <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1001.0" BorderPane.alignment="CENTER">
+               <children>
+                  <SubScene fill="#c34473" height="667.0" width="980.0">
+                    <root>
+                      <Region />
+                    </root>
+                  </SubScene>
+               </children>
+            </Pane>
+         </center>
+         <left>
+            <Pane fx:id="mainMenuPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="667.0" prefWidth="220.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="667.0" prefWidth="221.0" styleClass="bg-gradient">
+                     <children>
+                      <Button mnemonicParsing="false" onMouseClicked="#goHome" prefHeight="22.0" prefWidth="224.0" styleClass="buttonMang" stylesheets="@application.css" text="Ana Sayfa">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#goOgrenciNotGoruntuleme" prefHeight="22.0" prefWidth="224.0" styleClass="buttonMang" stylesheets="@application.css" text="Not Goruntuleme">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#goOgrenciDersKayit" prefHeight="22.0" prefWidth="224.0" styleClass="buttonMang" stylesheets="@application.css" text="Ders Kayit">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#goUserUpdate" prefHeight="22.0" prefWidth="224.0" styleClass="buttonMang" stylesheets="@application.css" text="Kullanici Islemleri">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#goDuyurular" prefHeight="22.0" prefWidth="224.0" styleClass="buttonMang" stylesheets="@application.css" text="Duyurular">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets bottom="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="980.0" styleClass="bg-gradient" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.updateDetail">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="980.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="313.0" style="-fx-background-color: white;" text="Bilgi Guncelleme Ekrani">
+               <font>
+                  <Font name="Century" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Ad:" textFill="#e8e3e3e0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userName" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Email:" textFill="#e8e3e3e0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userEmail" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="36.0" prefWidth="110.0" text="Fotograf:" textFill="#e8e3e3e0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="imagesBox" prefHeight="36.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="48.0" prefWidth="339.0">
+               <children>
+                  <Label alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="110.0" text="Sifre:" textFill="#e8e3e3">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="userPassword" prefHeight="36.0" prefWidth="200.0" style="-fx-background-color: white;" />
+               </children>
+            </HBox>
+            <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" onAction="#updateUser" prefHeight="48.0" prefWidth="144.0" ripplerFill="#ae1f1f" style="-fx-background-color: white;" stylesheets="@application.css" text="Guncelle" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="80.0" top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+            <Label fx:id="updateState" prefHeight="57.0" prefWidth="248.0" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="100.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

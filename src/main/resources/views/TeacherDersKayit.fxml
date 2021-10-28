@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="541.0" prefWidth="1100.0" styleClass="bg-gradient" stylesheets="@application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Teacher.TeacherDersKayit">
+   <children>
+      <JFXButton layoutX="127.0" layoutY="332.0" onAction="#showLessonsRequest" prefHeight="40.0" prefWidth="257.0" style="-fx-background-color: yellow;" text="Istenen Dersleri Goster">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="dersKayitIstekTable" layoutX="42.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="427.0" />
+      <Label alignment="CENTER" layoutX="429.0" layoutY="14.0" prefHeight="16.0" prefWidth="199.0" style="-fx-background-color: white;" text="Ders Kayit Yonetimi">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="42.0" layoutY="70.0" prefHeight="30.0" prefWidth="427.0" text="Ders Kayit Istekleri" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <VBox fx:id="dersListeBox" layoutX="528.0" layoutY="70.0" prefHeight="304.0" prefWidth="407.0" visible="false">
+         <children>
+            <Label alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="436.0" text="Ders Listesi" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </Label>
+            <TableView fx:id="lessonsDetailTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="438.0" />
+            <JFXButton alignment="CENTER" onAction="#approveDersKaydi" prefHeight="40.0" prefWidth="257.0" style="-fx-background-color: green;" text="Ders Kaydini Onayla" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="90.0" top="10.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

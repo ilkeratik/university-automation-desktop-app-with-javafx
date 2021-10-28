@@ -22,7 +22,7 @@ public class Duyurular implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        webDuyuru.getEngine().load("http://yaz.muh.firat.edu.tr/tr/duyurular");
+        webDuyuru.getEngine().load("http://yaz.mf.firat.edu.tr/tr/announcements-all");
 
     }
 
